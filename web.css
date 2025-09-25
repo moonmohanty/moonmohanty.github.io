@@ -85,6 +85,16 @@ ul li {
   color: #444;
 }
 
+#Awards ul {
+  margin: 0;            /* remove ul margin */
+  padding-left: 20px;   /* control bullet indent */
+}
+
+#Awards li {
+  margin: 0;            /* remove li margin */
+  padding: 2px 0;       /* minimal vertical spacing */
+}
+
 footer {
   text-align: center;
   color: #777;
