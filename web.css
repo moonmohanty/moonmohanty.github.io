@@ -1,11 +1,18 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 700px;
-  margin: auto;
-  padding: 20px;
-  font-family: “Segoe UI”, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #fafafa;
+  background-color: #f9f9f9;
   color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 header {
@@ -13,47 +20,76 @@ header {
   margin-bottom: 40px;
 }
 
-.profile-photo {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  margin: 20px 0;
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  color: #222;
 }
 
 .subtitle {
-  font-size: 1.2em;
+  font-style: italic;
   color: #555;
-  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #666;
+  margin-bottom: 15px;
+}
+
+header p, header a {
+  font-size: 1rem;
+  color: #444;
+}
+
+header a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
 }
 
 section h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+  color: #00509e;
   margin-bottom: 15px;
-  color: #222;
+  border-bottom: 2px solid #00509e;
+  padding-bottom: 5px;
+}
+
+section h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #0077cc;
 }
 
 ul {
   list-style-type: disc;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+ul li {
+  margin-bottom: 7px;
+  color: #444;
 }
 
 footer {
   text-align: center;
-  font-size: 0.9em;
   color: #777;
-  margin-top: 60px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
